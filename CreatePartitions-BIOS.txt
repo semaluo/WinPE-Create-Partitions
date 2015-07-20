@@ -1,0 +1,15 @@
+select disk 0
+clean
+rem == 1. System partition =========================
+create partition primary size=984
+format quick fs=ntfs label="System"
+assign letter="S"
+active
+rem == 2. Windows partition ========================
+create partition primary
+format quick fs=ntfs label="Windows"
+assign letter="W"
+rem ================================================
+rescan
+list volume
+exit
