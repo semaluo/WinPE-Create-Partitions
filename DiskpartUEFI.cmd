@@ -1,1 +1,0 @@
-diskpart /s %SystemRoot%\CreatePartitions-UEFI.txt

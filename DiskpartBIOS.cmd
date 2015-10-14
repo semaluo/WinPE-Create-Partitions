@@ -1,1 +1,0 @@
-diskpart /s %SystemRoot%\CreatePartitions-BIOS.txt
